@@ -1,18 +1,26 @@
+body {
+  font: normal 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 ul {
   list-style-type: none;
   overflow: auto;
 }
 
 hr {
-  max-width: 800px;
-  display: block;
-  height: 29px;
+  clear: left;
+  height: 0;
   border: 0;
   border-top: 1px solid #CCC;
 }
 
 #nav-tab {
-  max-width: 800px;
+  max-width: 80%;
   margin: auto;
   padding-top: 40px;
   padding-bottom: 20px;
@@ -21,11 +29,11 @@ hr {
 #nav-tab li {
   float: left;
   width: 50%;
-  height: 40px;
-  font-size: 22px;
+  min-width: 25%;
+  height: auto;
+  font-size: 1.3em;
   font-weight: bold;
   text-align: center;
-  position: relative;
 }
 
 .nav-tab-normal {
@@ -41,24 +49,29 @@ hr {
   border-bottom-width: 4px;
   text-decoration: none;
   height: inherit;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.content-list {
-  max-width: 800px;
+.intro-list {
+  max-width: 80%;
   margin: auto;
 }
 
-.content-list li {
+.intro-list li {
+  position: relative;
   height: 50px;
   color: #A0A0A0;
   font-size: 18px;
 }
 
-.content-list li a {
-  margin-top: 25%;
-  margin-bottom: 25%;
+.intro-list li a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
 }
 
-.content-list li i {
+.intro-list li i {
   float: right;
+  transform: translateY(150%);
 }

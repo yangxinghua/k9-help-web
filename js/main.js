@@ -25,6 +25,7 @@ function tabHandle() {
 
       divs[this.title].style.display = 'block';
         navs[this.title].getElementsByTagName('a')[0].className = 'nav-tab-selected';
+        $('#nav-tab')
     }
   }
 }
